@@ -3,6 +3,7 @@ import {motion} from 'framer-motion'
 
 const HeroText = styled(motion.div)`
       margin: 0 auto;
+      *{ cursor:default;}
       text-align: ${props => props.textAlign};
       height:auto;
       width: ${props => props.Width};
@@ -10,9 +11,11 @@ const HeroText = styled(motion.div)`
       h1 {
         font-size:2.75em;
         color:light-gray;
+        padding-top:10px;
       }
       h3{
-        margin-top:0px !important;
+        padding-top:10px;
+        padding-bottom:5px;
         font-size:2em;
       }
       @media only screen and (max-width: 600px) {
@@ -22,22 +25,22 @@ const HeroText = styled(motion.div)`
         width: ${props => props.MobileWidth};
       }
       input{
-        margin-bottom: 20px;
+        margin-top:20px;
+        margin-bottom:25px;
         background-color:grey;
-        padding:10px 15px;
+        padding:10px;
         width:350px;
         text-align:center;
         color:white;
         border:none;
         border-radius:10px;
-        ::-moz-selection { background: #20C9DB; color:white; }
-        ::selection { background: #20C9DB; color:white;}
+        ::-moz-selection { background: none;}
+        ::selection { background: none;}
         :focus { outline: none; }
         :hover{
           cursor:pointer;
         }
       }
-      
   `;
 
 export default HeroText;

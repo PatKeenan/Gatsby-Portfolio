@@ -16,7 +16,7 @@ const Button = styled(motion.button)`
       color: ${props => props.primary ? "#20C9DB" : "white"};
       :hover{
         background-color: ${props => props.primary ? "#20C9DB" : "white"};
-        color: ${props => props.primary ? "white" : "#20C9DB"};
+        color: ${props => props.primary ? "white" : "#20C9DB" };
         cursor:pointer;
       }
       :focus { outline: none; }
