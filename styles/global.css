@@ -13,10 +13,22 @@ body{
     width: 100%;
     overflow-x: hidden;
     justify-content: center;
+    background: linear-gradient(-45deg, #3d3c3c, #0f0c0e, #102f3a, #0d221d);
+	background-size: 400% 400%;
+    animation: gradient 25s ease infinite;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h4,h5,h6{
     font-family: 'Roboto', sans-serif;
     letter-spacing: 3px;
+    margin: 0px;
+}
+h1,h2,h3,h4,h5,h6{
+    color:rgb(235, 233, 233);
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
     margin: 0px;
 }
 p,a,li,ul,input{
@@ -25,3 +37,20 @@ p,a,li,ul,input{
     font-size: 1em;
 }
 
+.movingBg{
+    background: linear-gradient(-45deg, #3d3c3c, #0f0c0e, #102f3a, #0d221d);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

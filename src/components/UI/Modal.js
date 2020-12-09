@@ -11,7 +11,7 @@ const ModalContainer = styled(motion.div)`
     transition:${props => props.transi};
     cursor:default;
     align-items:center;
-    bottom:15px;
+    top:15px;
     right:15px;
     height:auto;
     width:auto;

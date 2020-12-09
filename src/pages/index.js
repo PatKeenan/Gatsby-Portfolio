@@ -10,6 +10,7 @@ import AnimationBlock from '../components/MotionDivs/AnimationBlock'
 
 
 
+
 const Home = () => {
   const [hideModal, showtheModal] = useState("0")
   const [opac, reveal] = useState("0")
@@ -26,12 +27,12 @@ const Home = () => {
   };  
     return (
       <>
-        <HeroContainer bg={"#373939"} h={"100vh"}>
+        <HeroContainer h={"100vh"} bg={"none"}>
           <Modal bg={"#12C862"} vis={hideModal} showtheModal={showtheModal}whileHover={{ scale: 1.02 }}transi={opac}>
           Copied!
           </Modal>
           <AnimationBlock MarginMoveUp={"-40px"}>
-            <Avatar src="/profile_copy.jpg" initial={{scale:0}} animate={{scale:1}} transition={{ delay: .2 }} />
+            <Avatar src="/profile_copy.jpg" initial={{scale:0}} animate={{scale:1}} transition={{ delay: .2 }} whileTap={{ scale: 0.8 }} />
             <HeroText textAlign="center" Width="70%" MobileWidth="95%" textAlignMobile="center" initial={{opacity:0}} animate={{opacity:1}}>
               <h1>Hi I'm Pat Keenan <span>👋 </span></h1>
               <h3>A self-taught developer and real estate agent living in Asbury Park NJ</h3>
@@ -39,16 +40,16 @@ const Home = () => {
               ref={textAreaRef}
               value="patkeenan.dev@gmail.com"
               />
-              <Button onClick={copyToClipboard} whileTap={{ scale: 0.9 }}>Copy Email</Button>
+              <Button onClick={copyToClipboard} whileTap={{ scale: 0.9 }} primary>Copy Email</Button>
             </HeroText>
           </AnimationBlock>
         </HeroContainer>
-        <HeroContainer bg={"#20C9DB"} h={"100vh"}>
-          <HeroText textAlign="left" Width="30%" MobileWidth="90%">
-            <h1>Hi I'm Pat Keenan! I'm a self-taught developer and real estate agent living in Asbury Park NJ</h1>
-            <p>This is my Portfolio website</p>
-            <Button primary><a>Test</a></Button>    
-          </HeroText>
+        <HeroContainer bg={"none"} h={"100vh"}>
+         
+            <HeroText textAlign="center" Width="90%" MobileWidth="90%" textAlignMobile="center">
+              <h3>Check out my Portfolio</h3> 
+            </HeroText>
+
         </HeroContainer>
       </>
   )
