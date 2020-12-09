@@ -4,33 +4,23 @@ import {motion} from 'framer-motion'
 const HeroText = styled(motion.div)`
       margin: 0 auto;
       *{ cursor:default;}
-      text-align: ${props => props.textAlign};
+      text-align: ${props => props.textAlignMobile};
       height:auto;
-      width: ${props => props.Width};
+      width: ${props => props.MobileWidth};
       color: white;
       h1 {
-        font-size:2.75em;
-        color:light-gray;
-        padding-top:10px;
-      }
-      h3{
-        padding-top:10px;
-        padding-bottom:5px;
-        font-size:2em;
-      }
-      @media only screen and (max-width: 600px) {
-        h1 {
         font-size:1.75em;
         }
-        width: ${props => props.MobileWidth};
-      }
-      input{
+
+
+      @media only screen and (min-width: 600px) {
+        input{
         margin-top:20px;
         margin-bottom:25px;
         background-color:grey;
         padding:10px;
-        width:350px;
-        text-align:center;
+        width: ${props => props.Width};
+        text-align: ${props => props.textAlign};
         color:white;
         border:none;
         border-radius:10px;
@@ -40,6 +30,21 @@ const HeroText = styled(motion.div)`
         :hover{
           cursor:pointer;
         }
+
+      }
+      @media only screen and (max-width: 600px) {
+        width: ${props => props.MobileWidth};
+        h1 {
+          font-size:2.75em;
+          color:light-gray;
+          padding-top:10px;
+        }
+        h3{
+          padding-top:10px;
+          padding-bottom:5px;
+          font-size:2em;
+        }
+      }
       }
   `;
 
