@@ -13,10 +13,21 @@ body{
     width: 100%;
     overflow-x: hidden;
     justify-content: center;
-    background: linear-gradient(-45deg, #3d3c3c, #0f0c0e, #102f3a, #0d221d);
+    background: linear-gradient(-45deg, #09162e, #0f0c0e, #102f3a, #0d221d);
 	background-size: 400% 400%;
     animation: gradient 25s ease infinite;
 }
+
+.ERRORPAGE{
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.ERRORPAGE:hover{
+    cursor:pointer;
+    text-decoration:none;
+}
+
 h1,h2,h4,h5,h6{
     font-family: 'Roboto', sans-serif;
     letter-spacing: 3px;
@@ -43,6 +54,7 @@ p,a,li,ul,input{
 	animation: gradient 15s ease infinite;
 }
 
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -54,3 +66,4 @@ p,a,li,ul,input{
 		background-position: 0% 50%;
 	}
 }
+

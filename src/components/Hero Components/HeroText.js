@@ -25,6 +25,7 @@ const HeroText = styled(motion.div)`
         background-color:grey;
         padding:10px;
         width: ${props => props.Width};
+        max-width: 500px !important;
         text-align: ${props => props.textAlign};
         color:white;
         border:none;
@@ -35,42 +36,33 @@ const HeroText = styled(motion.div)`
         :hover{
           cursor:pointer;
         }
-
-
-      @media only screen and (min-width: 600px) {
-        input{
-        margin-top:20px;
-        margin-bottom:25px;
-        background-color:grey;
-        padding:10px;
-        width: ${props => props.Width};
-        text-align: ${props => props.textAlign};
-        color:white;
-        border:none;
-        border-radius:10px;
-        ::-moz-selection { background: none;}
-        ::selection { background: none;}
-        :focus { outline: none; }
-        :hover{
-          cursor:pointer;
-        }
-
       }
+
+
       @media only screen and (min-width: 600px) {
-        width: ${props => props.MobileWidth};
+        max-width: 800px;
+        input{
+          max-width: 500px;
+
+        }
         h1 {
           font-size:2.75em;
           color:light-gray;
-          padding-top:10px;
+          padding-top:20px;
+    
           
         }
         h3{
           padding-top:10px;
           padding-bottom:5px;
-          font-size:2em;
+          font-size:1.75em;
+          font-weight:300;
+          max-width:700px;
+          margin:0 auto;
+   
         }
       }
-      }
+      
   `;
 
 export default HeroText;
