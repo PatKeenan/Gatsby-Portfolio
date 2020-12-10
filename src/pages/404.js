@@ -11,7 +11,7 @@ export default function PageNotFound (){
             <AnimationBlock>
             <HeroText textAlign="center" Width="70%" MobileWidth="95%" textAlignMobile="center" initial={{opacity:0}} animate={{opacity:1}}>
             <h1 style={{marginBottom: "15px"}}>Looks like your lost!</h1>
-            <Link to="/" className={"ERRORPAGE"}><Button>View Home Page</Button></Link>
+            <Link to="/" className={"ERRORPAGE"}>View Home Page</Link>
             </HeroText>
             </AnimationBlock>
         </HeroContainer>

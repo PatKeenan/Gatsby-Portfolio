@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
-import { render } from 'react-dom'
+
 
 const FadingDiv = styled(motion.div)`
     height:100vh;
