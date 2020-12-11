@@ -5,6 +5,7 @@ import Button from "../components/UI/Button"
 import Avatar from '../components/Avatar'
 import Modal from '../components/UI/Modal'
 import AnimationBlock from '../components/MotionDivs/AnimationBlock'
+import Grid from "../components/GridProjects/Grid"
 
 
 
@@ -40,13 +41,11 @@ const Home = () => {
             </HeroText>
           </AnimationBlock>
         </HeroContainer>
-        <HeroContainer bg={"none"} h={"100vh"}>
-         
-            <HeroText textAlign="center" Width="90%" MobileWidth="90%" textAlignMobile="center">
-              <h3>Check out my Portfolio</h3> 
-            </HeroText>
-
-        </HeroContainer>
+        <Grid>
+          <h2 className={"m-auto"}>Recent Projects</h2>
+          <div className={"title-divider"}></div>
+        </Grid>
+        
       </>
   )
 }

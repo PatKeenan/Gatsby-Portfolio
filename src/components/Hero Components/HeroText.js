@@ -13,6 +13,9 @@ const HeroText = styled(motion.div)`
         font-size:1.75em;
         padding-top:10px;
         }
+      h2 {
+        font-size:1.5em;
+      }
       h3{
           padding-top:10px;
           padding-bottom:5px;
