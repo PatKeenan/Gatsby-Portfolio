@@ -6,12 +6,14 @@ import Avatar from '../components/Avatar'
 import Modal from '../components/UI/Modal'
 import AnimationBlock from '../components/MotionDivs/AnimationBlock'
 import Grid from "../components/GridProjects/Grid"
+import Card from "../components/GridProjects/GridCard"
+import CardInfo from "../components/GridProjects/CardInfo"
+import { graphql } from 'gatsby';
 
 
 
-
-
-const Home = () => {
+const Home = ({data}) => {
+  const projects = data.allMarkdownRemark.nodes   
   const [hideModal, showtheModal] = useState("0")
   const [opac, reveal] = useState("0")
   const textAreaRef = useRef(null);
@@ -42,11 +44,36 @@ const Home = () => {
           </AnimationBlock>
         </HeroContainer>
         <Grid>
-          <h2 className={"m-auto"}>Recent Projects</h2>
-          <div className={"title-divider"}></div>
+          {projects.map(project => {
+          const title = project.frontmatter.title 
+          const desc = project.frontmatter.description
+          return (
+            <Card>
+                <h3 style={{paddingBottom: "10px"}}>{title}</h3>
+                <img src="https://source.unsplash.com/random" />
+                <CardInfo>
+                    <button primary>View Code</button>
+                    <button>View Project</button>
+                </CardInfo>
+            </Card>
+          )
+        })}
         </Grid>
-        
       </>
   )
 }
 export default Home;
+
+export const pageQuery = graphql`
+    query MyQuery {
+      allMarkdownRemark {
+        nodes {
+          frontmatter {
+            title
+            description
+            codeLink
+          }
+        }
+      }
+    }
+`
