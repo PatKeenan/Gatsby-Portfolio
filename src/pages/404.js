@@ -2,7 +2,6 @@ import React from 'react'
 import {Link} from 'gatsby'
 import HeroContainer from "../components/Hero Components/HeroContainer"
 import HeroText from "../components/Hero Components/HeroText"
-import Button from "../components/UI/Button"
 import AnimationBlock from '../components/MotionDivs/AnimationBlock'
 
 export default function PageNotFound (){

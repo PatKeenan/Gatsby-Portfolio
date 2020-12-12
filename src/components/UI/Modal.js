@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import styled from 'styled-components'
-import {motion, AnimatePresence} from 'framer-motion'
+import {motion} from 'framer-motion'
 
 const ModalContainer = styled(motion.div)`
     background-color:${props => props.bg};
@@ -28,10 +28,7 @@ const ModalContainer = styled(motion.div)`
     }
 `
 
-const ModalBackdrop = {
-    visible: { scale:1, x: "0",},
-    hidden: { scale:.8, x: "500px"}
-}
+
 
 const Modal = ({children, bg, vis, showtheModal, transi}) => {
     useEffect(

@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
 
@@ -6,6 +5,7 @@ import {motion} from 'framer-motion'
 
 const Card = styled(motion.div)`
     display: flex; 
+    max-width: 500px;
     flex-direction: column;
     margin: 10px auto;
     padding: 15px;
@@ -22,6 +22,9 @@ const Card = styled(motion.div)`
         object-fit:cover;
         object-position:center;
         
+    }
+    :hover{ 
+        background: rgba(255, 255, 255, 0.318);
     }
 `
 

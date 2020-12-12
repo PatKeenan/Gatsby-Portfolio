@@ -44,9 +44,9 @@ body{
     width: 100%;
     overflow-x: hidden;
     justify-content: center;
-    background: linear-gradient(-45deg, #09162e, #0f0c0e, #102f3a, #0d221d); 
-	background-size: 400% 400%;
-    animation: gradient 25s ease infinite; /* ---- See Below In Animations  Section----*/
+    background: linear-gradient(-45deg, #09162e, #0f0c0e, #102f3a, #173630); 
+	background-size: 200% 200%;
+    animation: gradient 10s ease infinite; /* ---- See Below In Animations  Section----*/
 }
 
 /* --------- FONTS -----------  */
@@ -71,13 +71,20 @@ p,a,li,ul,input{
 .m-auto{
     margin: 0 auto;
 }
-
+.title-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
 .title-divider{
     height: 4px;
     width: 90vw;
     background-color:rgb(235, 233, 233) ;
     margin: 15px auto;
     opacity: .2;
+    max-width: 1000px;
 }
 
 /* ============== SECTION #2: PAGE SPECIFIC ====================*/

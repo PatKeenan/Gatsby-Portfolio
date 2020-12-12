@@ -1,8 +1,5 @@
-import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
-import Avatar from '../Avatar'
-import { useStaticQuery, Link, graphql } from "gatsby"
 
 const Grid = styled(motion.div)`
     display: grid;
@@ -13,6 +10,13 @@ const Grid = styled(motion.div)`
     padding-bottom:5px;
     gap: 0px 0px;
     margin-bottom:25px;
+
+    @media only screen and (min-width: 700px) {
+        grid-template-columns: 1fr 1fr;
+        max-width: 1000px;
+        margin: 0 auto;
+        gap: 0px 10px;
+    }
 `
 
-export default Grid ;
+export default Grid;
