@@ -47,6 +47,7 @@ body{
     background: linear-gradient(-45deg, #09162e, #0f0c0e, #102f3a, #173630); 
 	background-size: 200% 200%;
     animation: gradient 10s ease infinite; /* ---- See Below In Animations  Section----*/
+    -webkit-animation: gradient 10s ease infinite;
 }
 
 /* --------- FONTS -----------  */
