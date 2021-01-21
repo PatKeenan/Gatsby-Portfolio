@@ -1,4 +1,4 @@
-# Basic Gatsby Tutorial Site
+# Portfolio Built With GatsbyJS
 Features: home index page, projects sourced from folder using graphql, blog page setup, components styled with styled components, animation provided by framer motion. Includes react-helmet and an seo element. Launched on Netlify.
 
 Key Features:
