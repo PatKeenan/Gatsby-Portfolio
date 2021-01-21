@@ -8,4 +8,4 @@ Key Features:
 
 ### Deployed the site on Netlify and adding the custom domain
 
-[View Site]('https://www.patkeenan.dev/')
+[View Site](https://www.patkeenan.dev/)
